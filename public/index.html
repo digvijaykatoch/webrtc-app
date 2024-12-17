@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC Video Chat</title>
+</head>
+<body>
+  <div id="join-screen">
+    <input type="text" id="room-name" placeholder="Room Name">
+    <button id="join-btn">Join Room</button>
+  </div>
+
+  <div id="video-chat" style="display: none;">
+    <video id="local-video" autoplay muted></video>
+    <div id="remote-videos"></div>
+    <button id="leave-btn">Leave Room</button>
+    <button id="mute-btn">Mute</button>
+    <button id="video-btn">Disable Video</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
